@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://static.filestackapi.com/filestack-js/4.x.x/filestack.min.js"></script>
+    <title>Client Document Portal</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif !important;
+        max-width: 800px !important;
+        margin: 50px auto !important;
+        padding: 20px !important;
+        background-color: #f5f5f5 !important;
+      }
+      .portal-container {
+        background: white !important;
+        padding: 30px !important;
+        border-radius: 8px !important;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1) !important;
+      }
+      .upload-section {
+        margin: 30px 0 !important;
+        padding: 20px;
+        border: 2px dashed #ccc !important;
+        border-radius: 8px !important;
+        text-align: center !important;
+      }
+      .upload-btn {
+        background-color: #007bff !important;
+        color: white !important;
+        padding: 12px 30px !important;
+        border: none !important;
+        border-radius: 5px !important;
+        font-size: 16px !important;
+        cursor: pointer !important;
+      }
+      .upload-btn:hover {
+        background-color: #0056b3 !important;
+      }
+      .file-list {
+        margin-top: 30px !important;
+      }
+      .file-item {
+        padding: 15px !important;
+        background: #f8f9fa !important;
+        margin: 10px 0 !important;
+        border-radius: 5px !important;
+        display: flex !important;
+        justify-content: space-between !important;
+        align-items: center !important;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="portal-container">
+      <h1>Client Document Portal</h1>
+      <p>
+        Upload your documents securely. All files are encrypted and stored
+        safely.
+      </p>
+      <!-- File upload section -->
+      <div class="upload-section">
+        <h3>Upload Your Documents</h3>
+        <p>Click below to select files from your computer</p>
+        <!-- Button triggers file upload via portal.js -->
+        <button class="upload-btn" id="uploadBtn">
+          Choose Files to Upload
+        </button>
+      </div>
+      <!-- Uploaded files list section -->
+      <div class="file-list">
+        <h3>Your Documents</h3>
+        <div id="fileListContainer">
+          <p style="color: #666">No documents uploaded yet.</p>
+        </div>
+      </div>
+    </div>
+    <!-- JavaScript for handling uploads and file display -->
+    <script src="portal.js"></script>
+  </body>
+</html>
